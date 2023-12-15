@@ -1,3 +1,5 @@
+# (C) Antonio Maulucci 2023 - http://www.antomau.com
+
 from io import open
 
 from flask import Flask, render_template, request
