@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML>
+        <head>
+                <title>downloader</title>
+        </head>
+        <body>
+                <form method="POST" action="/musicar">
+                        <select name="operation" id="operation">
+                                <option value="video">video</option>
+                                <option value="music">music</option>
+                                <option value="musicar">musicar</option>
+                                <option value="getFormat">getFormat</option>
+                                <option value="custom">custom</option>
+                        </select>
+                        <!--  -->
+                        <br/>
+                        <label for="urlgnomos">url del video: </label><br>
+                        <input type="text" id="videourl" name="videourl" required>
+                        <!--  -->
+                        <br/>
+                        <label for="outputlabel">output file: </label><br>
+                        <input type="text" id="outputfile" name="outputfile" placeholder="file.mp3">
+                        <!--  -->
+                        <br/>
+                        <label for="formatoLabel">custom format: </label><br>
+                        <input type="text" id="formato" name="formato" placeholder="22">
+                        <!--  -->
+                        <input type="submit" value="Download">
+                        <!-- ./yt-dlp_macos2 -f bestaudio --ffmpeg-location ../ffmpeg/ffmpeg -x --audio-format mp3 --audio-quality 128k -->
+                </form>
+        </body>
+</HTML>
